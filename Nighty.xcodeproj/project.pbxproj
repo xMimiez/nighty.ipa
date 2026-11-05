@@ -6,8 +6,37 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		A1B0C8832E9B318900083951 /* NightyWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A1B0C8762E9B318900083951 /* NightyWatch.app */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A1B0C8802E9B318900083951 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 21B0C86E2E9B318900083950 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1B0C8752E9B318900083951;
+			remoteInfo = NightyWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A1B0C8822E9B318900083951 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				A1B0C8832E9B318900083951 /* NightyWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		21B0C8762E9B318900083950 /* Nighty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nighty.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1B0C8762E9B318900083951 /* NightyWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NightyWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -17,6 +46,13 @@
 				Info.plist,
 			);
 			target = 21B0C8752E9B318900083950 /* Nighty */;
+		};
+		A171F7CB2E9D4FC7009A38B9 /* Exceptions for "NightyWatch" folder in "NightyWatch" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = A1B0C8752E9B318900083951 /* NightyWatch */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
@@ -29,10 +65,25 @@
 			path = Nighty;
 			sourceTree = "<group>";
 		};
+		A1B0C8782E9B318900083951 /* NightyWatch */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				A171F7CB2E9D4FC7009A38B9 /* Exceptions for "NightyWatch" folder in "NightyWatch" target */,
+			);
+			path = NightyWatch;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		21B0C8732E9B318900083950 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1B0C8732E9B318900083951 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -46,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				21B0C8782E9B318900083950 /* Nighty */,
+				A1B0C8782E9B318900083951 /* NightyWatch */,
 				21B0C8772E9B318900083950 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				21B0C8762E9B318900083950 /* Nighty.app */,
+				A1B0C8762E9B318900083951 /* NightyWatch.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -68,10 +121,12 @@
 				21B0C8722E9B318900083950 /* Sources */,
 				21B0C8732E9B318900083950 /* Frameworks */,
 				21B0C8742E9B318900083950 /* Resources */,
+				A1B0C8822E9B318900083951 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A1B0C8812E9B318900083951 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				21B0C8782E9B318900083950 /* Nighty */,
@@ -81,6 +136,28 @@
 			);
 			productName = Nighty;
 			productReference = 21B0C8762E9B318900083950 /* Nighty.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A1B0C8752E9B318900083951 /* NightyWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1B0C89A2E9B318C00083951 /* Build configuration list for PBXNativeTarget "NightyWatch" */;
+			buildPhases = (
+				A1B0C8722E9B318900083951 /* Sources */,
+				A1B0C8732E9B318900083951 /* Frameworks */,
+				A1B0C8742E9B318900083951 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				A1B0C8782E9B318900083951 /* NightyWatch */,
+			);
+			name = NightyWatch;
+			packageProductDependencies = (
+			);
+			productName = NightyWatch;
+			productReference = A1B0C8762E9B318900083951 /* NightyWatch.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -94,6 +171,9 @@
 				LastUpgradeCheck = 1620;
 				TargetAttributes = {
 					21B0C8752E9B318900083950 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					A1B0C8752E9B318900083951 = {
 						CreatedOnToolsVersion = 16.2;
 					};
 				};
@@ -113,12 +193,20 @@
 			projectRoot = "";
 			targets = (
 				21B0C8752E9B318900083950 /* Nighty */,
+				A1B0C8752E9B318900083951 /* NightyWatch */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		21B0C8742E9B318900083950 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1B0C8742E9B318900083951 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -135,7 +223,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A1B0C8722E9B318900083951 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A1B0C8812E9B318900083951 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1B0C8752E9B318900083951 /* NightyWatch */;
+			targetProxy = A1B0C8802E9B318900083951 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		21B0C8982E9B318C00083950 /* Debug */ = {
@@ -253,7 +356,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
-				VALIDATE_PRODUCT = YES;
+				VALIDATE_PRODUCT = NO;
 			};
 			name = Release;
 		};
@@ -331,6 +434,72 @@
 			};
 			name = Release;
 		};
+		A1B0C89B2E9B318C00083951 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=watchos*]" = SZ977XLF24;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NightyWatch/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Nighty;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.stik.neoarz.nighty.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		A1B0C89C2E9B318C00083951 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=watchos*]" = SZ977XLF24;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NightyWatch/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Nighty;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.stik.neoarz.nighty.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -348,6 +517,15 @@
 			buildConfigurations = (
 				21B0C89B2E9B318C00083950 /* Debug */,
 				21B0C89C2E9B318C00083950 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1B0C89A2E9B318C00083951 /* Build configuration list for PBXNativeTarget "NightyWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1B0C89B2E9B318C00083951 /* Debug */,
+				A1B0C89C2E9B318C00083951 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

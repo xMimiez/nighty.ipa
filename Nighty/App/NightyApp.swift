@@ -8,6 +8,13 @@ struct NightyApp: App {
         WindowGroup {
             RootView()
                 .environment(session)
+                .task {
+                    PhoneWatchBridge.shared.activate()
+                    PhoneWatchBridge.shared.send(signedIn: session.credentials != nil)
+                }
+                .onChange(of: session.credentials != nil) { _, signedIn in
+                    PhoneWatchBridge.shared.send(signedIn: signedIn)
+                }
         }
     }
 }
